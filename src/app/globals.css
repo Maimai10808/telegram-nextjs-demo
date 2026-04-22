@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07111f;
+  --foreground: #eff6ff;
+  --panel: rgba(9, 24, 43, 0.82);
+  --panel-strong: #10233d;
+  --line: rgba(148, 163, 184, 0.16);
+  --brand: #27c3ff;
+  --brand-2: #9cf17f;
+  --danger: #ff7a7a;
+  --muted: #9db1c8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-ibm-plex-sans), sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(39, 195, 255, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(156, 241, 127, 0.1), transparent 24%),
+    linear-gradient(180deg, #08111f 0%, #0b1730 46%, #07111f 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.tg-safe-bottom {
+  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+}
+
+.panel {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(16, 35, 61, 0.94), rgba(9, 24, 43, 0.9));
+  box-shadow:
+    0 20px 60px rgba(3, 10, 20, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+}
+
+.adm-tab-bar {
+  --adm-color-primary: var(--brand);
+  --adm-tab-bar-item-active-color: var(--brand);
+  --adm-tab-bar-item-color: rgba(239, 246, 255, 0.65);
+  background: rgba(4, 14, 27, 0.94);
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.adm-button-primary {
+  --background-color: linear-gradient(135deg, #27c3ff, #1d83ff);
+}
+
+.adm-list {
+  --border-top: none;
+  --border-bottom: none;
+  --active-background-color: rgba(255, 255, 255, 0.03);
+  background: transparent;
+}
+
+.adm-input {
+  --font-size: 16px;
+  --color: #eff6ff;
+}
