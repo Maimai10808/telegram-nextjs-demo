@@ -9,6 +9,17 @@
 - 它强调的是 **接入思路、模块拆分、状态设计和前端工程结构**
 - 它不是生产级交易系统，当前很多业务逻辑仍然是 **mock / demo**
 
+<p align="center">
+  <img src="./1.png" alt="Home" width="50%" />
+   <img src="./2.png" alt="Home" width="50%" />
+    <img src="./3.png" alt="Home" width="50%" />
+</p>
+
+<p align="center">
+  <img src="./4.png" alt="Home" width="50%" />
+   <img src="./5.png" alt="Home" width="50%" />
+</p>
+
 ---
 
 ## 1. 项目简介
@@ -785,7 +796,7 @@ Next.js 16 在开发模式下会对 dev 请求来源做限制。Telegram 或 ngr
 
 你可以这样说：
 
-> 这是一个基于 Next.js、Telegram Mini App 和 TON Connect 做的轻量交易产品 demo。项目的重点不是实现真实交易撮合，而是把 Telegram 容器接入、服务端 initData 校验、TON 钱包连接、移动端交易界面和轻量状态管理整合到一个可演示的工程里。  
+> 这是一个基于 Next.js、Telegram Mini App 和 TON Connect 做的轻量交易产品 demo。项目的重点不是实现真实交易撮合，而是把 Telegram 容器接入、服务端 initData 校验、TON 钱包连接、移动端交易界面和轻量状态管理整合到一个可演示的工程里。
 > 在实现上，我把 Telegram 身份态、钱包连接态、业务交易态和服务端数据态拆开管理。页面结构上按 feature 做了模块拆分，比如 telegram、wallet、trade、leaderboard、rewards、profile。这样既方便新手阅读，也方便我在面试里讲模块边界和前后端联调思路。
 
 ### 技术亮点总结
