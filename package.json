@@ -9,9 +9,22 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.99.2",
+    "@tma.js/bridge": "^2.3.0",
+    "@tma.js/init-data-node": "^2.0.7",
+    "@tma.js/sdk": "^3.2.0",
+    "@tma.js/sdk-react": "^3.0.19",
+    "@ton/core": "^0.63.1",
+    "@ton/ton": "^16.2.4",
+    "@tonconnect/ui-react": "^2.4.4",
+    "antd-mobile": "^5.42.3",
+    "clsx": "^2.1.1",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.12"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
